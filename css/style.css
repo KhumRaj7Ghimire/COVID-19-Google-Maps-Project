@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+/* Utility Classes */
+
+.text-primary {
+  /* color: #0078ff; */
+  color: #00b8ff;
+}
+
+/* Padding Y axis */
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* Padding all sides */
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+/* Headings */
+.l-heading {
+  font-size: 42px;
+  font-weight: 500;
+}
+h1 {
+  border-collapse: separate;
+  border-spacing: 1rem 0;
+  color: #123;
+  display: table;
+  font-family: Merriweather;
+  line-height: 0.25;
+  margin: 1em 0 0.5em;
+  white-space: nowrap;
+  width: 80%;
+}
+
+h1:before,
+h1:after {
+  border-top: 2px solid #123;
+  content: "";
+  display: table-cell;
+  width: 50%;
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background: #00b8ff;
+  border-radius: 5px;
+}
+
+/* Section: Showcase */
+#showcase {
+  /* display: flex; */
+  /* justify-content: center; */
+  background: #333;
+  height: 78vh;
+  color: #fff;
+  border-bottom: #ccc solid 1px;
+}
+#map {
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Map Info Box */
+.info-container {
+  color: #333;
+}
+.info-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  margin-bottom: 8px;
+}
+.info-flag img,
+.country-data-1 td img {
+  max-width: 25px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Worldwide Data */
+.worlwide-data-wrapper {
+  display: inline-block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  background: rgba(51, 51, 51, 1);
+  border: #ccc solid 1px;
+  left: 50%;
+  margin-left: -366px;
+  margin-top: -80px;
+}
+
+.worlwide-data-wrapper h2 {
+  margin: 0 20px;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 400;
+}
+#worlwide-data {
+  display: flex;
+  margin: 10px 10px;
+}
+.data-1,
+.data-2,
+.data-3 {
+  margin: 0 10px;
+  margin-bottom: 10px;
+  width: 170px;
+  border-right: 1px solid #dadce0;
+}
+.data-4 {
+  margin: 0 10px;
+  margin-bottom: 10px;
+  width: 120px;
+}
+
+.data-name {
+  margin-bottom: 12px;
+  color: #fff;
+}
+#total-confirmed,
+#total-active,
+#total-recovered,
+#total-deaths {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Section: Data Information */
+
+/* Data in Table */
+/* Data Information */
+#data-info {
+  background-color: white;
+  margin-top: 150px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* #data-info .title h1 {
+  position: absolute;
+} */
+
+/* Table */
+.table-wrapper {
+  background: #333;
+  width: 732px;
+  height: 530px;
+  margin-top: 50px;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  overflow: hidden;
+  /* justify-content: center; */
+}
+.table-wrapper h2 {
+  color: white;
+  padding: 13px;
+  font-size: 26px;
+}
+.table-wrapper h5 {
+  color: white;
+  font-size: 12px;
+  padding: 6px 13px;
+}
+
+.country-data {
+  height: 438px;
+  overflow-y: scroll;
+  max-width: 96%;
+  margin: auto;
+}
+
+.country-data-1 th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-style: none;
+}
+
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#table tr:nth-child(odd) {
+  background-color: #fff;
+}
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #333;
+  color: white;
+}

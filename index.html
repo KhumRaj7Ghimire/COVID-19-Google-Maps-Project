@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a55009dea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="css/widescreen.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>COVID 19 Tracker</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <h2><span class="text-primary">COVID 19 </span> Tracker</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#data-info">Statistics</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#precaution">Precaution</a></li>
+      </ul>
+    </nav>
+    <!-- Header: Map Showcase -->
+    <header id="showcase">
+      <div id="map"></div>
+      <!-- Worldwide Data -->
+      <div class="worlwide-data-wrapper">
+        <h2>Worldwide</h2>
+        <div id="worlwide-data">
+          <div class="data-1">
+            <div class="data-name">Confirmed</div>
+            <div id="total-confirmed">8923487171</div>
+          </div>
+          <div class="data-2">
+            <div class="data-name">Active Cases</div>
+            <div id="total-active">8923487171</div>
+          </div>
+          <div class="data-3">
+            <div class="data-name">Recovered</div>
+            <div id="total-recovered">8923487171</div>
+          </div>
+          <div class="data-4">
+            <div class="data-name">Deaths</div>
+            <div id="total-deaths">8923487171</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section: Data Information -->
+    <section id="data-info">
+      <h1 class="l-heading">
+        <span class="text-primary">COVID-19</span> Statistics
+      </h1>
+      <!-- Data in Table -->
+      <div class="table-wrapper">
+        <h2>Cases</h2>
+        <div class="country-data">
+          <table id="table" class="country-data-1">
+            <thead>
+              <tr>
+                <th scope="col">Country Name</th>
+                <th scope="col">Cases</th>
+                <th scope="col">Active Cases</th>
+                <th scope="col">Recovered</th>
+                <th scope="col">Deaths</th>
+              </tr>
+            </thead>
+            <tbody id="table-data">
+              <tr>
+                <td>Country Name</td>
+                <td>Cases</td>
+                <td>Active Cases</td>
+                <td>Recovered</td>
+                <td>Deaths</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5>
+          Source: WikipediaEuropean Centre for Disease Prevention and Control
+        </h5>
+      </div>
+    </section>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmZQImxjUjMf3-nX8m4h30SMNp-LqS1p4&callback=initMap"
+      async
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
